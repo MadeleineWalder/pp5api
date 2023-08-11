@@ -64,7 +64,7 @@ DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
     '8000-madeleinewalder-pp5api-i1ortkj1hso.ws-eu102.gitpod.io',
-    'pp5api.herokuapp.com'
+    'pp5api-a60f85b616aa.herokuapp.com'
 ]
 
 
