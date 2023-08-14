@@ -64,11 +64,11 @@ DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
-    '8000-madeleinewalder-pp5api-i1ortkj1hso.ws-eu102.gitpod.io',
+    '8000-madeleinewalder-pp5api-i1ortkj1hso.ws-eu103.gitpod.io',
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    os.environ-get('CLIENT_ORIGIN')
+    os.environ.get('CLIENT_ORIGIN')
 ]
 
 # CORS_ALLOW_CREDENTIALS = True
