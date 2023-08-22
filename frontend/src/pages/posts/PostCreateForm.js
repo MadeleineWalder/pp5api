@@ -26,10 +26,11 @@ function PostCreateForm() {
 
   const [postData, setPostData] = useState({
     title: "",
+    rating: "",
     content: "",
     image: "",
   });
-  const { title, content, image } = postData;
+  const { title, rating, content, image } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -56,6 +57,7 @@ function PostCreateForm() {
     const formData = new FormData();
 
     formData.append("title", title);
+    formData.append("rating", rating);
     formData.append("content", content);
     formData.append("image", imageInput.current.files[0]);
 
@@ -79,6 +81,22 @@ function PostCreateForm() {
           name="title"
           placeholder="Usually the name of the game"
           value={title}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.title?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+
+      <Form.Group>
+        <Form.Label>Rating</Form.Label>
+        <Form.Control
+          type="text"
+          name="rating"
+          placeholder="Rate the game e.g: 10/10 (optional)"
+          value={rating}
           onChange={handleChange}
         />
       </Form.Group>
