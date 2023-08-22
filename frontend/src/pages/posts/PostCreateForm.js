@@ -77,6 +77,7 @@ function PostCreateForm() {
         <Form.Control
           type="text"
           name="title"
+          placeholder="Usually the name of the game"
           value={title}
           onChange={handleChange}
         />
@@ -93,6 +94,7 @@ function PostCreateForm() {
           as="textarea"
           rows={6}
           name="content"
+          placeholder="Add a caption, ask a question or give game advice"
           value={content}
           onChange={handleChange}
         />
@@ -107,10 +109,10 @@ function PostCreateForm() {
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
         onClick={() => history.goBack()}
       >
-        cancel
+        Cancel
       </Button>
       <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
-        create
+        Create
       </Button>
     </div>
   );
