@@ -22,6 +22,7 @@ const Post = (props) => {
     likes_count,
     like_id,
     title,
+    rating,
     content,
     image,
     updated_at,
@@ -102,6 +103,7 @@ const Post = (props) => {
       </Link>
       <Card.Body>
         {title && <Card.Title className="text-center">{title}</Card.Title>}
+        {rating && <Card.Text>Rating: {rating}</Card.Text>}
         {content && <Card.Text>{content}</Card.Text>}
         <div className={styles.PostBar}>
           {is_owner ? (

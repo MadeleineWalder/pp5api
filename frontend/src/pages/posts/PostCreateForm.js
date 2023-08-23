@@ -79,7 +79,7 @@ function PostCreateForm() {
         <Form.Control
           type="text"
           name="title"
-          placeholder="Usually the name of the game"
+          placeholder="e.g name of the game"
           value={title}
           onChange={handleChange}
         />
@@ -95,7 +95,7 @@ function PostCreateForm() {
         <Form.Control
           type="text"
           name="rating"
-          placeholder="Rate the game e.g: 10/10 (optional)"
+          placeholder="e.g 10/10 (optional)"
           value={rating}
           onChange={handleChange}
         />
