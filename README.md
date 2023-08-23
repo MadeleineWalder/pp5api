@@ -73,22 +73,66 @@ The Profile Page:
 - Edit profile: As a logged in user I can edit my profile so that I can change my profile picture and bio
 - Update username and password: As a logged in user I can update my username and password so that I can change my display name and keep my profile secure
 
+---
+
 ## Design Features
 
+- **Color Scheme:**
+
+- **Font:**
+
+## Structural Features
+
+### The Navbar
+
+- **Logo:**
+
+- **Add Post:**  
+
+- **Navigation Links:** 
+
+### Home Page:
+
+
+### Post Page:
+
+
+### Profile Page:
+
+
+### Sign-up Page
+
+
+### Sign-in Page
+
+
+## Future Features:
+
+
+---
 
 ## Structural Features
 
 
+
+---
+
 ## Future Features
 
 
+
+---
+
 ## Bugs
+
+- 
+
 
 ---
 
 ## Technologies:
 
-- This site was created using these languages: Python, JavaScript, HTML and CSS.
+- This site was created using these languages: Python, JavaScript, React, Bootstrap, HTML and CSS.
 - Frameworks/Libraries: Django and Bootstrap.
 - Allauth was used to create the log-in/out and sign-up forms.
 - Github and Gitpod are the platforms where I created this website. Github (and Gihub pages) for creating and storing my repositories and project board/issues, and Gitpod for writing the code.
@@ -471,6 +515,7 @@ As you can see the only errors were missing semi-colons so I added these.
 ### Gitpod
 
 - Typing 'python3 manage.py runserver' into the Gitpod terminal allows you to view a preview of the site in a browser.
+- Dragging open the second terminal, type 'cd frontend' to ensure you in the frontend directory. Then type 'npm start' and click open preview to view the app.
 - Every time a secton of code is added the browser can be refreshed to see the change, sometimes you need to press ctrl + shift + R for changes to be updated.
 - To save and commit progress, type 'git add .' into the terminal to add all your changes followed by 'git commit -m' and then your message describing what you did in double quotes.
 - Typing 'git push' will then push your code, and this should be done at the end of every coding session or whenever you want an already deployed site to be updated.
@@ -481,7 +526,7 @@ As you can see the only errors were missing semi-colons so I added these.
 - I used ElephantSQL to install and manage the database. I had already set up an account so I could log in and begin.
 - I clicked on the green 'Create New Instance' button in the top right.
 - I added details such as name, region and the type of plan I wanted which was the free 'Tiny Turtle' plan.
-- My database url was then provided for me to copy and use later on.
+- My database url was then provided for me to copy and paste into my config vars on Heroku.
 
 
 ### Heroku
@@ -492,7 +537,7 @@ As you can see the only errors were missing semi-colons so I added these.
 - I made sure to comment out the old database 'db.sqlite3' in the settings.py file and added in my new database url.
 - I also added my Heroku Hostname to the allowed hosts list.
 - Back in Heroku I went to the deployment tab for my app and selected Github. Then I searched for and selected my repository.
-- At the bottom of the page I ticked the box to enable automatic deploys, and the clicked deploy.
+- At the bottom of the page I ticked the box to enable automatic deploys, and then clicked deploy.
 
 Link to deployed site: https://sushicat.herokuapp.com/
 
