@@ -106,7 +106,7 @@ const SignUpForm = () => {
             ))}
 
             <Button
-              className={`${btnStyles.Button} ${btnStyles.Wide}`}
+              className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Color}`}
               type="submit"
             >
               Sign up

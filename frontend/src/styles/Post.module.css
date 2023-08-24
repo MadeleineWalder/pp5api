@@ -5,6 +5,18 @@
     margin-bottom: 16px;
     text-align: center;
   }
+
+  .Rating {
+    color: #c28e00;
+  }
+
+  .Star {
+    color: #c28e00;
+  }
+
+  .Disabled {
+    pointer-events: none;
+  }
   
   .Post figure,
   h5 {
@@ -12,13 +24,13 @@
   }
   
   .Heart {
-    color: #f85032;
+    color: #cc0404;
   }
   
   .Heart:hover {
-    color: #2142b2;
+    color: #262d3f;
   }
   
   .HeartOutline:hover {
-    color: #f85032;
+    color: #262d3f;
   }
