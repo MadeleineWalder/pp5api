@@ -23,7 +23,17 @@ Here you can see:
 
 ## The Wireframe
 
-MAKE
+- The wireframe for the home page:
+
+![wireframe home page](/docs/screenshots/wfhome.jpg)
+
+- The wrieframe for the post page. This is the page a user will see if they click on a post to view it individually:
+
+![wireframe post page](/docs/screenshots/wfpost.jpg)
+
+- The wireframe for the profile page: something I forgot to consider here at the time of planning was that if a user is signed in, and is viewing another users profile, they will also see the follow/ unfollow button for that profile.
+
+![wireframe profile page](/docs/screenshots/wfprofile.jpg)
 
 
 ## User Stories
@@ -125,8 +135,18 @@ The Profile Page:
 
 ## Bugs
 
-- 
+- Bug: The user could not see the stats on their profile/ another users profile such as number of posts, followers and following.
 
+- Solution: In my serializers.py file inside the profiles directory I had forgotten to add 'posts_count', 'followers_count', 'following_count', to the fields lists in the meta class for the profile model.
+
+![bug example 1](/docs/screenshots/fix1.jpg)
+
+
+- Bug: The user could not view individual posts or comment on posts. They would just be taken to a blank white screen.
+
+- Solution: Correct the import in PostPage.js. I was importing from "react-router" when it should have been "react-router-dom".
+
+![bug example 2](/docs/screenshots/fix2.jpg)
 
 ---
 
