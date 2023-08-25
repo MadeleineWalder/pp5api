@@ -129,7 +129,19 @@ The Profile Page:
 
 ## Future Features
 
+- Private messaging
 
+- Pin comments
+
+- Upvote posts
+
+- Reply to comments
+
+- Like comments
+
+- Email authentication / password recovery
+
+- Emojis for desktop
 
 ---
 

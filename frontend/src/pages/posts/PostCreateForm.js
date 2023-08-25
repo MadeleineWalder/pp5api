@@ -178,7 +178,7 @@ function PostCreateForm() {
             </Form.Group>
             {errors?.image?.map((message, idx) => (
               <Alert variant="warning" key={idx}>
-                {message}
+                {"Please upload an image"}
               </Alert>
             ))}
 
