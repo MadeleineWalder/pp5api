@@ -3,15 +3,15 @@
 Welcome to Gamebook! The site where gaming enthusiasts can share thoughts, tips, tricks and more about games!
 This site is designed to be a social media platform aimed specifically at gamers. It is a place where the community can come together and share a huge amount of knowledge on any game. The platform would also appeal to gaming companies and content creators as a way to advatise and monitor the popularity of certain games. This makes it stand out from the huge crowd of different social media platforms that exist today, and this is only the begining! I truely believe thise site could be added apon significantly to make it even better with some extra features that would help it to excel in a real world senerio.
 
-![Finished website on different devices](/docs/screenshots/finishedsushi.jpg)
+![Finished website on different devices](/docs/screenshots/.jpg)
 
-### Link to deployed site: https://pp5api.herokuapp.com/
+### Link to deployed site: 
 
 ---
 
 ## Project Board
 
-### Link: https://github.com/users/MadeleineWalder/projects/5
+### Link: 
 
 Here you can see:
 - The Wireframe
@@ -95,35 +95,50 @@ The Profile Page:
 
 ### The Navbar
 
-- **Logo:**
+- logo
+- links
+- signed in -avatar, sign out option
 
-- **Add Post:**  
-
-- **Navigation Links:** 
+![navbar](/docs/screenshots/navbar.jpg)
 
 ### Home Page:
 
+- search bar
+- pop pros
+- inifin scroll
 
-### Post Page:
-
-
-### Profile Page:
-
+![](/docs/screenshots/.jpg)
 
 ### Sign-up Page
 
+- form
+
+![](/docs/screenshots/.jpg)
 
 ### Sign-in Page
 
+- form
 
-## Future Features:
+![](/docs/screenshots/.jpg)
+
+### Feed and Liked pages:
+
+- 
+
+![](/docs/screenshots/.jpg)
+
+![](/docs/screenshots/.jpg)
+
+### Profile Page:
+
+- header with avatar + stats
+- their posts
+- if signed in + is viewing own profile can edit
 
 
----
+![](/docs/screenshots/.jpg)
 
-## Structural Features
-
-
+![profile edit form](/docs/screenshots/.jpg)
 
 ---
 
@@ -144,6 +159,8 @@ The Profile Page:
 - Emojis for desktop
 
 - Notifications
+
+- able to view followers/following
 
 ---
 
@@ -192,35 +209,83 @@ The Profile Page:
 
 Upon opening the site the user should first see the home page:
 
-This includes the navbar, hero image, main buttons and footer.
+This includes the navbar, recent posts, and popular profiles.
 
 Home page on desktop:
 
-![homepage on desktop](/docs/screenshots/hpdesktop.jpg)
+![Home page on desktop](/docs/screenshots/hpdesktop.jpg)
 
 Home page on tablet:
 
-![homepage on tablet](/docs/screenshots/hptablet.jpg)
+![Home page on tablet](/docs/screenshots/hptablet.jpg)
 
 Home page on mobile:
 
-![homepage on mobile](/docs/screenshots/hpmobile.jpg)
+![Home page on mobile](/docs/screenshots/hpmobile.jpg)
 
 Outcome: tests passed
 
-Clicking on 'Menu' in the navigation bar OR the 'Menu' button should take the user to the menu page:
+The navbar should only show the profile, feed, liked and sign-out links when a user is logged in:
 
-Menu page on desktop:
+Navbar logged in on desktop:
 
-![menu on desktop](/docs/screenshots/mdesktop.jpg)
+![Navbar logged in on desktop](/docs/screenshots/hpdesktop.jpg)
 
-Menu page on tablet:
+Navbar logged in on tablet:
 
-![menu on tablet](/docs/screenshots/mtablet.jpg)
+![navbar on tablet](/docs/screenshots/hptablet.jpg)
 
-Menu page on mobile:
+Navbar logged in on mobile:
 
-![menu on mobile](/docs/screenshots/mmobile.jpg)
+![Navbar logged in on mobile](/docs/screenshots/hpmobile.jpg)
+
+Outcome: tests passed
+
+The navbar should only show the home, sign-in and sign-up links when a user is logged out:
+
+Navbar logged out on desktop:
+
+![Navbar logged out on desktop](/docs/screenshots/hpdesktop.jpg)
+
+Navbar logged out on tablet:
+
+![Navbar logged out on tablet](/docs/screenshots/hptablet.jpg)
+
+Navbar logged outon mobile:
+
+![Navbar logged out on mobile](/docs/screenshots/hpmobile.jpg)
+
+Outcome: tests passed
+
+If the user is logged in and clicks 'Feed' in the navbar, they should see the feed page where post from people they are following are displayed:
+
+Feed page on desktop:
+
+![Feed page desktop](/docs/screenshots/404.jpg)
+
+Feed page on tablet:
+
+![Feed page tablet](/docs/screenshots/404t.jpg)
+
+Feed page on mobile:
+
+![Feed page mobile](/docs/screenshots/404m.jpg)
+
+Outcome: tests passed
+
+If the user is logged in and clicks 'Liked' in the navbar, they should see the Liked page where posts they have liked are displayed:
+
+Liked page on desktop:
+
+![Liked page desktop](/docs/screenshots/404.jpg)
+
+Liked page on tablet:
+
+![Liked page tablet](/docs/screenshots/404t.jpg)
+
+Liked page on mobile:
+
+![Liked page mobile](/docs/screenshots/404m.jpg)
 
 Outcome: tests passed
 
@@ -238,7 +303,7 @@ Sign up page on mobile:
 
 ![sign up on mobile](/docs/screenshots/signupmobile.jpg)
 
-The Sign-up form requires the user to fill out all fields except the optional email field:
+The Sign-up form requires the user to fill out all fields:
 
 ![username required](/docs/screenshots/unrequired.jpg)
 
@@ -249,10 +314,6 @@ The Sign-up form requires the user to fill out all fields except the optional em
 Password fields must be the same and the password cannot be too simple:
 
 ![password too common](/docs/screenshots/pwc.jpg)
-
-The email must be in email format:
-
-![email in valid format required](/docs/screenshots/email.jpg)
 
 Outcome: tests passed
 
@@ -270,15 +331,17 @@ Sign in page on mobile:
 
 ![sign in on mobile](/docs/screenshots/signinmobile.jpg)
 
-The Sign-in form requires the users username and password:
+The Sign-in form requires the users correct username and password:
 
 ![users username](/docs/screenshots/username.jpg)
 
 ![users password](/docs/screenshots/password.jpg)
 
+![incorrect info](/docs/screenshots/incorrect.jpg)
+
 Outcome: tests passed
 
-Clicking on 'Sign-out' in the navigation bar should take them to the sign out page:
+Clicking on 'Sign-out' in the navigation bar should sign the user out, redirecting to the home page:
 
 Sign out page on desktop:
 
@@ -294,139 +357,167 @@ Sign out page on mobile:
 
 Outcome: tests passed
 
-When the user signs in or out an alert should pop up to notify them:
+Typing into the search bar should allow users to search for posts by title or user:
 
-Alert on desktop:
+Searching on desktop:
 
-![Alert on desktop](/docs/screenshots/alertd1.jpg)
+![Searching on desktop](/docs/screenshots/mdesktop.jpg)
 
-![Alert on desktop](/docs/screenshots/alertd.jpg)
+Searching page on tablet:
 
-Alert on tablet:
+![Searching on tablet](/docs/screenshots/mtablet.jpg)
 
-![Alert on tablet](/docs/screenshots/alertt1.jpg)
+Searching page on mobile:
 
-![Alert on tablet](/docs/screenshots/alertt.jpg)
-
-Alert on mobile:
-
-![Alert on mobile](/docs/screenshots/alertm1.jpg)
-
-![Alert on mobilep](/docs/screenshots/alertm.jpg)
+![Searching on mobile](/docs/screenshots/mmobile.jpg)
 
 Outcome: tests passed
 
-Clicking on 'Bookings' in the navigation bar OR the 'Book' button should take them to the bookings page:
+Clicking on a popular profiles avatar should take the user to that profiles profile:
 
-Booking page on desktop:
+Profile page on desktop:
 
-![Booking page on desktop](/docs/screenshots/bdesktop.jpg)
+![Profile on desktop](/docs/screenshots/mdesktop.jpg)
 
-Booking page on tablet:
+Profile page on tablet:
 
-![Booking page on tablet](/docs/screenshots/btablet.jpg)
+![Profile on tablet](/docs/screenshots/mtablet.jpg)
 
-Booking page on mobile:
+Profile page on mobile:
 
-![Booking page on mobile](/docs/screenshots/bmobile.jpg)
-
-Outcome: tests passed
-
-However if the user is not signed in yet they will be required to sign in first:
-
-Require sign in to book on desktop:
-
-![Booking page on desktop](/docs/screenshots/sidesktop.jpg)
-
-Require sign in to book on tablet:
-
-![Booking page on tablet](/docs/screenshots/sitablet.jpg)
-
-Require sign in to book on mobile:
-
-![Booking page on mobile](/docs/screenshots/simobile.jpg)
+![Profile on mobile](/docs/screenshots/mmobile.jpg)
 
 Outcome: tests passed
 
-Clicking on the 'Add Booking' button should take them to the add booking page:
+The user should be able to click on a post to view it in more detail:
 
-Add booking page on desktop:
+Post on desktop:
 
-![add booking page on desktop](/docs/screenshots/adesktop.jpg)
+![Post on desktop](/docs/screenshots/alertd1.jpg)
 
-Add booking page on tablet:
+Post on tablet:
 
-![add booking page on tablet](/docs/screenshots/atablet.jpg)
+![Post on tablet](/docs/screenshots/alertt1.jpg)
 
-Add booking page on mobile:
+Post on mobile:
 
-![add booking page on mobile](/docs/screenshots/amobile.jpg)
-
-When the user clicks on the date field they will see this calendar to help them pick a date:
-
-![add booking date picker](/docs/screenshots/date.jpg)
-
-The time field also has a similar function:
-
-![add booking time picker](/docs/screenshots/time.jpg)
-
-None of the form fields can be left blank:
-
-![the name field is required](/docs/screenshots/fname.jpg)
-
-![the date field is required](/docs/screenshots/fdate.jpg)
-
-![the time field is required](/docs/screenshots/ftime.jpg)
-
-![the number of people field is required](/docs/screenshots/fpeople.jpg)
-
-If the user inputs a date in the past, they will be notified that they must enter a date in the future.
-
-![the date error message](/docs/screenshots/datepicker2.jpg)
-
-The same thing will happen if they try to edit a booking date to a date that is older than the current date.
-
-Likewise if they edit or create bookings on the same date they will notified and the booking form refreshed:
-
-![the double booking error message](/docs/screenshots/doublebooking.jpg)
+![Post on mobile](/docs/screenshots/alertm1.jpg)
 
 Outcome: tests passed
 
-Clicking on the 'Edit' button on a booking should take them to the edit booking page:
+The user should be able to scroll infinitely to continuously view posts:
 
-It is the same form as for adding a new booking and has all the same funtionality.
+Posts on desktop:
 
-Edit booking page on desktop:
+![Posts page on desktop](/docs/screenshots/bdesktop.jpg)
 
-![Edit booking page on desktop](/docs/screenshots/edesktop.jpg)
+Posts page on tablet:
 
-Edit booking page on tablet:
+![Posts page on tablet](/docs/screenshots/btablet.jpg)
 
-![Edit booking page on tablet](/docs/screenshots/etablet.jpg)
+Posts page on mobile:
 
-Edit booking page on mobile:
-
-![Edit booking page on mobile](/docs/screenshots/emobile.jpg)
-Outcome: tests passed
-
-Clicking on the 'Delete' button should trigger the delete modal on the bookings:
-
-Delete booking page on desktop:
-
-![Delete booking page on desktop](/docs/screenshots/ddesktop.jpg)
-
-Delete booking page on tablet:
-
-![Delete booking page on tablet](/docs/screenshots/dtablet.jpg)
-
-Delete booking page on mobile:
-
-![Delete booking page on mobile](/docs/screenshots/dmobile.jpg)
+![Posts page on mobile](/docs/screenshots/bmobile.jpg)
 
 Outcome: tests passed
 
-My site also has a custom 404 page. If the user were to enter a url that doesn't exist it should be displayed:
-If the user clicks the button they should return to the homepage.
+A user must be logged in to like or comment on posts:
+
+Like or comment on desktop:
+
+![Like or comment on desktop](/docs/screenshots/sidesktop.jpg)
+
+Like or comment on tablet:
+
+![Like or comment on tablet](/docs/screenshots/sitablet.jpg)
+
+Like or comment on mobile:
+
+![Like or comment on mobile](/docs/screenshots/simobile.jpg)
+
+Outcome: tests passed
+
+The user should not be able to like their own post:
+
+Unable to like on desktop:
+
+![Unable to like on desktop](/docs/screenshots/adesktop.jpg)
+
+Unable to like on tablet:
+
+![Unable to like on tablet](/docs/screenshots/atablet.jpg)
+
+Unable to like on mobile:
+
+![Unable to like on mobile](/docs/screenshots/amobile.jpg)
+
+Outcome: tests passed
+
+The user should be able to click 'add post' in the navbar to add a post if logged in:
+
+Add a post on desktop:
+
+![Add a post on desktop](/docs/screenshots/adesktop.jpg)
+
+Add a poston tablet:
+
+![Add a post on tablet](/docs/screenshots/atablet.jpg)
+
+Add a post on mobile:
+
+![Add a post on mobile](/docs/screenshots/amobile.jpg)
+
+Outcome: tests passed
+
+The user should be able to see the dropdown menu on their own post if logged in:
+
+Dropdown menu on desktop:
+
+![Dropdown menu on desktop](/docs/screenshots/edesktop.jpg)
+
+Dropdown menu on tablet:
+
+![Dropdown menu on tablet](/docs/screenshots/etablet.jpg)
+
+Dropdown menu on mobile:
+
+![Dropdown menu on mobile](/docs/screenshots/emobile.jpg)
+
+Outcome: tests passed
+
+Clicking on the 'Edit' button should allow the user to edit the post via the edit form:
+
+Edit post on desktop:
+
+![Edit poston desktop](/docs/screenshots/ddesktop.jpg)
+
+Edit post on tablet:
+
+![Edit post on tablet](/docs/screenshots/dtablet.jpg)
+
+Edit post on mobile:
+
+![Edit post on mobile](/docs/screenshots/dmobile.jpg)
+
+Outcome: tests passed
+
+Clicking on the 'Delete' button should delete the post. The page reshreshes and it's no longer visable:
+
+Delete post on desktop:
+
+![Delete poston desktop](/docs/screenshots/ddesktop.jpg)
+
+Delete post on tablet:
+
+![Delete post on tablet](/docs/screenshots/dtablet.jpg)
+
+Delete post on mobile:
+
+![Delete post on mobile](/docs/screenshots/dmobile.jpg)
+
+Outcome: tests passed
+
+If the user were to enter a url that doesn't exist the custom 404 page should be displayed:
 
 The 404 page on desktop:
 
@@ -448,38 +539,21 @@ Outcome: tests passed
 
 - I used the [W3C HTML Validator](https://validator.w3.org/#validate_by_input) to test my html.
 
-The home page:
-The results showed an error in two places where an anchor tag is wrapping the buttons. I did some research and I couldn't find out **why** this is bad practise. I even found one website which gave an example of some html where the button was wrapped in anchor tags. The website actually offers coding courses which I almost enrolled in myself. A link to the page is here: https://www.shecodes.io/athena/17038-how-to-add-a-link-to-my-button-in-html
+DO I ONLY HAVE ! PAGE??? inspect > download source code > paste into validator
 
-The only other solution I could find was to remove the button tags and use divs instead, but style them like buttons. Unfortunately I dont think I will have time to implement this as I'm worried about the implications this will cause to the layout of my site so close to my deadline.
+or
+- home
+- sign-up
+- sign-in
+- post
+- create post
+- edit post
+- profile
+- feed
+- liked
 
 ![The W3C Validator showing my HTML](/docs/screenshots/hpvalid1.jpg)
 
-The menu page:
-Here there were no errors.
-
-![The W3C Validator showing my HTML](/docs/screenshots/bvalid.jpg)
-
-The booking page:
-I made sure to add a booking here before copying the source code so that could be tested too. I'm not sure what is going on with these errors. I have been looking over my code and all the errors say I have unclosed elements but all of mine are closed properly.
-As an example the final error says that the main tag is unclosed, but you can clearly see that it is:
-
-![The W3C Validator showing my HTML](/docs/screenshots/vbvalid.jpg)
-
-![The W3C Validator showing my HTML](/docs/screenshots/main.jpg)
-
-The Sign-up page:
-No errors.
-
-![The W3C Validator showing my HTML](/docs/screenshots/suvalid.jpg)
-
-The Sign-in:
-
-![The W3C Validator showing my HTML](/docs/screenshots/sivalid.jpg)
-
-The Sign-out page:
-
-![The W3C Validator showing my HTML](/docs/screenshots/sovalid.jpg)
 
 - I used the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to test my CSS. There were no errors:
 
