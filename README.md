@@ -143,6 +143,8 @@ The Profile Page:
 
 - Emojis for desktop
 
+- Notifications
+
 ---
 
 ## Bugs
