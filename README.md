@@ -95,39 +95,56 @@ The Profile Page:
 
 ### The Navbar
 
-- logo
-- links
-- signed in -avatar, sign out option
+- This contains the logo, nav-links. If the user is signed in there will also be a link to their profile and their avatar will be displayed.
 
-![navbar](/docs/screenshots/navbar.jpg)
+- The logo can be clicked to naigate the user back to the home page.
+
+- The nav-links have a darker colour when hovered or active.
+
+![navbar signed out](/docs/screenshots/navbar1.jpg)
+
+![navbar signed in](/docs/screenshots/navbar2.jpg)
 
 ### Home Page:
 
-- search bar
-- pop pros
-- inifin scroll
+- The home page contains the search bar at the top to allow users to search posts.
 
-![](/docs/screenshots/.jpg)
+![search bar](/docs/screenshots/searchbar1.jpg)
+
+- The most popular profiles are displayed on the right. If signed in the user will be able to follow/unfollow them here. 
+
+Signed in:
+
+![popular profiles signed in](/docs/screenshots/poppros1.jpg)
+
+Signed out:
+
+![popular profiles signed out](/docs/screenshots/poppros2.jpg)
+
+- The home page allows the user to scroll inifinitely through posts without having to navigate to other pages.
+
+![loading more posts](/docs/screenshots/scroll1.jpg)
+
 
 ### Sign-up Page
 
-- form
+- The sign-up page includes the navbar, an image and a form with a username field and two password fields as well as a sign up button to submit.
 
-![](/docs/screenshots/.jpg)
+![the sign-up page](/docs/screenshots/signup1.jpg)
 
 ### Sign-in Page
 
-- form
+- The sign-in page is basically the same but the form only has one password field.
 
-![](/docs/screenshots/.jpg)
+![the sign-in page](/docs/screenshots/signin1.jpg)
 
 ### Feed and Liked pages:
 
-- 
+- When signed in the user can navigate to the 'Feed' and 'Liked' pages through the navbar. The feed shows the user posts made by accounts they are following, whilst the liked page is of course for posts the user has liked.
 
-![](/docs/screenshots/.jpg)
+![the feed](/docs/screenshots/feed1.jpg)
 
-![](/docs/screenshots/.jpg)
+![the liked page](/docs/screenshots/liked1.jpg)
 
 ### Profile Page:
 
@@ -271,6 +288,10 @@ Feed page on mobile:
 
 ![Feed page mobile](/docs/screenshots/404m.jpg)
 
+If I were to unfollow (name) and refresh the page I would no longer see their posts on the feed:
+
+![Unfollowed post](/docs/screenshots/404m.jpg)
+
 Outcome: tests passed
 
 If the user is logged in and clicks 'Liked' in the navbar, they should see the Liked page where posts they have liked are displayed:
@@ -286,6 +307,10 @@ Liked page on tablet:
 Liked page on mobile:
 
 ![Liked page mobile](/docs/screenshots/404m.jpg)
+
+If I were to unlike the fist post for example and refresh the page I would no longer see that post on the feed:
+
+![Unliked post](/docs/screenshots/404m.jpg)
 
 Outcome: tests passed
 
