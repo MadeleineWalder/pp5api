@@ -148,14 +148,52 @@ Signed out:
 
 ### Profile Page:
 
-- header with avatar + stats
-- their posts
-- if signed in + is viewing own profile can edit
+- Clicking on an avatar allows the user to view that profile and its stats. This includes the number of posts, following and people they are folling.
 
+![the profile page](/docs/screenshots/profile1.jpg)
 
-![](/docs/screenshots/.jpg)
+- If the user is signed in and viewing their own profile they will also see this dropdown menu allowing them to edit their profile, username or password. 
 
-![profile edit form](/docs/screenshots/.jpg)
+![profile dropdown menu](/docs/screenshots/profile2.jpg)
+
+- If the user clicks edit profile they can use this form to change their avatar and bio.
+
+![profile edit form](/docs/screenshots/editprofile.jpg)
+
+- The change username or password options take the user to a form to change their username or password respectively.
+
+![username edit form](/docs/screenshots/changeusername.jpg)
+![password edit form](/docs/screenshots/changepassword.jpg)
+
+### Post Create Form:
+
+- Clicking on the add post link with take the user to the post create form.
+
+![post create form](/docs/screenshots/postcreate.jpg)
+
+- The post consists of: The owners username and avatar, the date the post was created, the image, the title, the optional rating, the main text, the like counter and button and the comment counter and button. For the owner of the post the three dots for the dropdown menu will also be visible.
+
+![post structure](/docs/screenshots/post.jpg)
+
+### Post Page:
+
+- Once a user has created a post, they can click it to view it separately. Here the owner of the post can see the dropdown menu.
+
+![post dropdown menu](/docs/screenshots/postmenu.jpg)
+
+- From that dropdown menu on the post page the owner can click the edit button to be take to the post edit form. This contains all the same fields as the post create form.
+
+![post edit form](/docs/screenshots/postedit.jpg)
+
+- Deleting a post is as simple as clicking the delete button.
+
+- The like button can be clicked to like posts, however the user must be logged in to like and they cannot like their own post.
+
+![like and comment buttons](/docs/screenshots/buttons.jpg)
+
+- The owner and other users can also view its comments or make comments using the comment form if logged in.
+
+![comments](/docs/screenshots/comment1.jpg)
 
 ---
 
