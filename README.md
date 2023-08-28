@@ -21,19 +21,21 @@ Here you can see:
 - Future Features
 - Bugs
 
+#### Note all of these are also included below.
+
 ## The Wireframe
 
 - The wireframe for the home page:
 
-![wireframe home page](/docs/screenshots/wfhome.jpg)
+![wireframe home page](/docs/wireframes/wfhome.jpg)
 
 - The wrieframe for the post page. This is the page a user will see if they click on a post to view it individually:
 
-![wireframe post page](/docs/screenshots/wfpost.jpg)
+![wireframe post page](/docs/wireframes//wfpost.jpg)
 
 - The wireframe for the profile page: something I forgot to consider here at the time of planning was that if a user is signed in, and is viewing another users profile, they will also see the follow/ unfollow button for that profile.
 
-![wireframe profile page](/docs/screenshots/wfprofile.jpg)
+![wireframe profile page](/docs/wireframes//wfprofile.jpg)
 
 
 ## User Stories
@@ -87,9 +89,13 @@ The Profile Page:
 
 ## Design Features
 
-- **Color Scheme:**
+- **Color Scheme:** 
 
-- **Font:**
+The colour scheme for this site is red, white and a super dark blue thats almost black. When I started the project my first thought was: 'What colours do I think of when I think about gaming?' and red was immediately my first response. The colour red is used so much in the gaming industry because of its vibrant, exciting appearance to make games amoung other products look as fun and exciting as possible. My next choice was black as black and red is used a lot in games, gaming equipment is commonly black. However when I tried to use black I didn't like the outcome. If I used it as a background colour it made the site look very dark, and a lot of the images I was uploading just didn't stand out so well on a black background. The more I lightened the black colour to more of a gray the less clear the red text became. I ended up using white instead as it looked a lot more friendly and welcoming which is something I wanted for my social media platform to encourage people to use it. However when I was experimenting with different shades of black I found this very nice black/blue which I decided to use as a highlight for things like the navbar icons when hovered or active. It stands out very well and contrasts nicely from the other colours which is perfect for this role.
+
+- **Font:** 
+
+My font which I chose for this site is called Roboto Mono and I really like how it is clear and easy to read it is. It also looks like a font from a video game; it reminds me of a font from a retro game but with a modern twist. I ended up using this font for the whole site as I thought it worked so well with the theme and kept the site consistent in style.
 
 ## Structural Features
 
@@ -140,9 +146,11 @@ Signed out:
 
 ### Feed and Liked pages:
 
-- When signed in the user can navigate to the 'Feed' and 'Liked' pages through the navbar. The feed shows the user posts made by accounts they are following, whilst the liked page is of course for posts the user has liked.
+- When signed in the user can navigate to the 'Feed' and 'Liked' pages through the navbar. The feed shows the user posts made by accounts they are following.
 
 ![the feed](/docs/screenshots/feed1.jpg)
+
+- Whilst the liked page is of course for posts the user has liked:
 
 ![the liked page](/docs/screenshots/liked1.jpg)
 
@@ -199,23 +207,23 @@ Signed out:
 
 ## Future Features
 
-- Private messaging
+In the future I would love to include the following aspects to make the site compete with other big social media platforms:
 
-- Pin comments
+- Private messaging -to allow direct communication between users
 
-- Upvote posts
+- Pin comments -to allow only the owner of a post to pin a comment to the top of the list. It could be one they thought was most useful like an answer to a question, or one they thought was simply the most funny. This would improve user experience as other people looking for an answer wouldn't have to scroll through all comments to find it.
 
-- Reply to comments
+- Reply to comments -being able to reply to a specific comment would make communication between users easier as the reply would be under the original comment and not above in order from newest to oldest. It would be easier to tell who was talking to who or responding to which comment.
 
-- Like comments
+- Like comments -being able to like comments is similar to being able to pin them, except its not just the owner of the post who can like its comments. Allowing all suers to like comments (provided that they are logged in) provides more overall user interaction for the community.
 
-- Email authentication / password recovery
+- Email authentication / password recovery -to allow users to reset their password if they forgot it would be ideal for real world use. Everyone forgets their password sometimes! It would encorage users to continue using the site instead of giving up or having to make a new account.
 
-- Emojis for desktop
+- Emojis for desktop -emojis are a huge part of how people express themselves online and would not only improve user experince but also just make posting and communiting with each other more fun!
 
-- Notifications
+- Notifications -recieving notifications when someone likes of comments on your post would also encorage users to return to the site often and boost user activity.
 
-- able to view followers/following
+- Able to view followers/following -being able to see a list of followers or people you are following would make it easier to follow/unfollow speific people so the user doesn't have to scroll through the feed to try to find someone.
 
 ---
 
@@ -238,15 +246,13 @@ Signed out:
 
 ## Technologies:
 
-- This site was created using these languages: Python, JavaScript, React, Bootstrap, HTML and CSS.
+- This site was created using these languages: Python, JavaScript, React, HTML and CSS.
 - Frameworks/Libraries: Django and Bootstrap.
-- Allauth was used to create the log-in/out and sign-up forms.
 - Github and Gitpod are the platforms where I created this website. Github (and Gihub pages) for creating and storing my repositories and project board/issues, and Gitpod for writing the code.
-- Heroku for deployment.
-- Unicorn Revealer is an extension for Chrome which I used to help me see the different elements of my site clearly.
-- [Google Fonts](https://fonts.google.com/) is where I imported my fonts from.
-- [Fontawesome](https://fontawesome.com/) is the website where I sourced my social media icons.
-- [Pexels](https://www.pexels.com/) is the website I used to source the hero image.
+- Heroku was connected to my github repository for site deployment.
+- [Google Fonts](https://fonts.google.com/) is where I imported my font from.
+- [Fontawesome](https://fontawesome.com/) is where I sourced my icons.
+- [Pexels](https://www.pexels.com/) is the website I used to source any images that I didn't take myself.
 - I used the website [amiresponsive.co.uk](https://amiresponsive.co.uk/) to show my finished site on different devices at the top of this page.
 
 ---
@@ -264,7 +270,7 @@ Signed out:
 
 Upon opening the site the user should first see the home page:
 
-This includes the navbar, recent posts, and popular profiles.
+This includes the navbar, search bar, recent posts, and popular profiles.
 
 Home page on desktop:
 
@@ -280,7 +286,23 @@ Home page on mobile:
 
 Outcome: tests passed
 
-The navbar should only show the profile, feed, liked and sign-out links when a user is logged in:
+The navbar should show the logo, Home, Sign-in and Sign-up links when a user is logged out:
+
+Navbar logged out on desktop:
+
+![Navbar logged out on desktop](/docs/screenshots/hpdesktop.jpg)
+
+Navbar logged out on tablet:
+
+![navbar logged out on tablet](/docs/screenshots/hptablet.jpg)
+
+Navbar logged out on mobile:
+
+![Navbar logged out on mobile](/docs/screenshots/hpmobile.jpg)
+
+Outcome: tests passed
+
+The navbar should show the profile, feed, liked and sign-out links when a user is logged in:
 
 Navbar logged in on desktop:
 
@@ -296,23 +318,7 @@ Navbar logged in on mobile:
 
 Outcome: tests passed
 
-The navbar should only show the home, sign-in and sign-up links when a user is logged out:
-
-Navbar logged out on desktop:
-
-![Navbar logged out on desktop](/docs/screenshots/hpdesktop.jpg)
-
-Navbar logged out on tablet:
-
-![Navbar logged out on tablet](/docs/screenshots/hptablet.jpg)
-
-Navbar logged outon mobile:
-
-![Navbar logged out on mobile](/docs/screenshots/hpmobile.jpg)
-
-Outcome: tests passed
-
-If the user is logged in and clicks 'Feed' in the navbar, they should see the feed page where post from people they are following are displayed:
+If the user clicks 'Feed' in the navbar, they should see the feed page where post from people they are following are displayed:
 
 Feed page on desktop:
 
@@ -326,13 +332,13 @@ Feed page on mobile:
 
 ![Feed page mobile](/docs/screenshots/404m.jpg)
 
-If I were to unfollow (name) and refresh the page I would no longer see their posts on the feed:
+For example if I were to unfollow (name) and refresh the page I would no longer see their posts on the feed:
 
 ![Unfollowed post](/docs/screenshots/404m.jpg)
 
 Outcome: tests passed
 
-If the user is logged in and clicks 'Liked' in the navbar, they should see the Liked page where posts they have liked are displayed:
+If the user clicks 'Liked' in the navbar, they should see the Liked page where posts they have liked are displayed:
 
 Liked page on desktop:
 
@@ -346,7 +352,7 @@ Liked page on mobile:
 
 ![Liked page mobile](/docs/screenshots/404m.jpg)
 
-If I were to unlike the fist post for example and refresh the page I would no longer see that post on the feed:
+For example if I were to unlike the fist post and refresh the page I would no longer see that post on the feed:
 
 ![Unliked post](/docs/screenshots/404m.jpg)
 
@@ -420,7 +426,7 @@ Sign out page on mobile:
 
 Outcome: tests passed
 
-Typing into the search bar should allow users to search for posts by title or user:
+Typing into the search bar on the home page should allow users to search for posts by title or user:
 
 Searching on desktop:
 
@@ -452,6 +458,62 @@ Profile page on mobile:
 
 Outcome: tests passed
 
+If logged in the user should be able to see and use the follow/unfollow buttons on the popular profiles:
+
+Feed page on desktop:
+
+![](/docs/screenshots/404.jpg)
+
+Feed page on tablet:
+
+![](/docs/screenshots/404t.jpg)
+
+Feed page on mobile:
+
+![](/docs/screenshots/404m.jpg)
+
+Outcome: tests passed
+
+If the user clicks 'Feed' in the navbar (logged in), they should see the feed page where post from people they are following are displayed:
+
+Feed page on desktop:
+
+![Feed page desktop](/docs/screenshots/404.jpg)
+
+Feed page on tablet:
+
+![Feed page tablet](/docs/screenshots/404t.jpg)
+
+Feed page on mobile:
+
+![Feed page mobile](/docs/screenshots/404m.jpg)
+
+For example if I were to unfollow (name) and refresh the page I would no longer see their posts on the feed:
+
+![Unfollowed post](/docs/screenshots/404m.jpg)
+
+Outcome: tests passed
+
+If the user clicks 'Liked' in the navbar (logged in), they should see the Liked page where posts they have liked are displayed:
+
+Liked page on desktop:
+
+![Liked page desktop](/docs/screenshots/404.jpg)
+
+Liked page on tablet:
+
+![Liked page tablet](/docs/screenshots/404t.jpg)
+
+Liked page on mobile:
+
+![Liked page mobile](/docs/screenshots/404m.jpg)
+
+For example if I were to unlike the fist post and refresh the page I would no longer see that post on the feed:
+
+![Unliked post](/docs/screenshots/404m.jpg)
+
+Outcome: tests passed
+
 The user should be able to click on a post to view it in more detail:
 
 Post on desktop:
@@ -468,7 +530,7 @@ Post on mobile:
 
 Outcome: tests passed
 
-The user should be able to scroll infinitely to continuously view posts:
+The user should be able to scroll infinitely to continuously view posts ON EVERY:
 
 Posts on desktop:
 
@@ -516,7 +578,39 @@ Unable to like on mobile:
 
 Outcome: tests passed
 
-The user should be able to click 'add post' in the navbar to add a post if logged in:
+The user should be able to click 'add post' in the navbar to add a post (logged in):
+
+Add a post on desktop:
+
+![Add a post on desktop](/docs/screenshots/adesktop.jpg)
+
+Add a poston tablet:
+
+![Add a post on tablet](/docs/screenshots/atablet.jpg)
+
+Add a post on mobile:
+
+![Add a post on mobile](/docs/screenshots/amobile.jpg)
+
+Outcome: tests passed
+
+The user should not be able to add an image that is too large:
+
+Add a post on desktop:
+
+![Add a post on desktop](/docs/screenshots/adesktop.jpg)
+
+Add a poston tablet:
+
+![Add a post on tablet](/docs/screenshots/atablet.jpg)
+
+Add a post on mobile:
+
+![Add a post on mobile](/docs/screenshots/amobile.jpg)
+
+Outcome: tests passed
+
+The user must add an image, a title and a description to their post:
 
 Add a post on desktop:
 
@@ -552,7 +646,7 @@ Clicking on the 'Edit' button should allow the user to edit the post via the edi
 
 Edit post on desktop:
 
-![Edit poston desktop](/docs/screenshots/ddesktop.jpg)
+![Edit post on desktop](/docs/screenshots/ddesktop.jpg)
 
 Edit post on tablet:
 
@@ -564,7 +658,7 @@ Edit post on mobile:
 
 Outcome: tests passed
 
-Clicking on the 'Delete' button should delete the post. The page reshreshes and it's no longer visable:
+Clicking on the 'Delete' button should delete the post. The page resfreshes and it's no longer visable:
 
 Delete post on desktop:
 
@@ -577,6 +671,38 @@ Delete post on tablet:
 Delete post on mobile:
 
 ![Delete post on mobile](/docs/screenshots/dmobile.jpg)
+
+Outcome: tests passed
+
+The user should be able to edit their profile if logged in:
+
+The 404 page on desktop:
+
+![custom 404 page desktop](/docs/screenshots/404.jpg)
+
+The 404 page on tablet:
+
+![custom 404 page tablet](/docs/screenshots/404t.jpg)
+
+The 404 page on mobile:
+
+![custom 404 page mobile](/docs/screenshots/404m.jpg)
+
+Outcome: tests passed
+
+The user should be able to edit their username and password if logged in:
+
+The 404 page on desktop:
+
+![custom 404 page desktop](/docs/screenshots/404.jpg)
+
+The 404 page on tablet:
+
+![custom 404 page tablet](/docs/screenshots/404t.jpg)
+
+The 404 page on mobile:
+
+![custom 404 page mobile](/docs/screenshots/404m.jpg)
 
 Outcome: tests passed
 
@@ -602,7 +728,7 @@ Outcome: tests passed
 
 - I used the [W3C HTML Validator](https://validator.w3.org/#validate_by_input) to test my html.
 
-DO I ONLY HAVE ! PAGE??? inspect > download source code > paste into validator
+DO I ONLY HAVE 1 PAGE??? inspect > download source code > paste into validator
 
 or
 - home
