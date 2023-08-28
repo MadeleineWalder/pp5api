@@ -274,15 +274,15 @@ This includes the navbar, search bar, recent posts, and popular profiles.
 
 Home page on desktop:
 
-![Home page on desktop](/docs/screenshots/hpdesktop.jpg)
+![Home page on desktop](/docs/screenshots/hdesktop.jpg)
 
 Home page on tablet:
 
-![Home page on tablet](/docs/screenshots/hptablet.jpg)
+![Home page on tablet](/docs/screenshots/htablet.jpg)
 
 Home page on mobile:
 
-![Home page on mobile](/docs/screenshots/hpmobile.jpg)
+![Home page on mobile](/docs/screenshots/hmobile.jpg)
 
 Outcome: tests passed
 
@@ -290,15 +290,19 @@ The navbar should show the logo, Home, Sign-in and Sign-up links when a user is 
 
 Navbar logged out on desktop:
 
-![Navbar logged out on desktop](/docs/screenshots/hpdesktop.jpg)
+![Navbar logged out on desktop](/docs/screenshots/navbard.jpg)
 
 Navbar logged out on tablet:
 
-![navbar logged out on tablet](/docs/screenshots/hptablet.jpg)
+![navbar logged out on tablet](/docs/screenshots/navbart.jpg)
+
+On moblie the navbar will become a dropdown menu which can be toggled by the user:
 
 Navbar logged out on mobile:
 
-![Navbar logged out on mobile](/docs/screenshots/hpmobile.jpg)
+![Navbar logged out on mobile](/docs/screenshots/navbarm1.jpg)
+
+![with dropdown menu active](/docs/screenshots/navbarm2.jpg)
 
 Outcome: tests passed
 
@@ -306,55 +310,17 @@ The navbar should show the profile, feed, liked and sign-out links when a user i
 
 Navbar logged in on desktop:
 
-![Navbar logged in on desktop](/docs/screenshots/hpdesktop.jpg)
+![Navbar logged in on desktop](/docs/screenshots/navbardin.jpg)
 
 Navbar logged in on tablet:
 
-![navbar on tablet](/docs/screenshots/hptablet.jpg)
+![navbar on tablet](/docs/screenshots/navbartin.jpg)
 
 Navbar logged in on mobile:
 
-![Navbar logged in on mobile](/docs/screenshots/hpmobile.jpg)
+![Navbar logged in on mobile](/docs/screenshots/navbarmin1.jpg)
 
-Outcome: tests passed
-
-If the user clicks 'Feed' in the navbar, they should see the feed page where post from people they are following are displayed:
-
-Feed page on desktop:
-
-![Feed page desktop](/docs/screenshots/404.jpg)
-
-Feed page on tablet:
-
-![Feed page tablet](/docs/screenshots/404t.jpg)
-
-Feed page on mobile:
-
-![Feed page mobile](/docs/screenshots/404m.jpg)
-
-For example if I were to unfollow (name) and refresh the page I would no longer see their posts on the feed:
-
-![Unfollowed post](/docs/screenshots/404m.jpg)
-
-Outcome: tests passed
-
-If the user clicks 'Liked' in the navbar, they should see the Liked page where posts they have liked are displayed:
-
-Liked page on desktop:
-
-![Liked page desktop](/docs/screenshots/404.jpg)
-
-Liked page on tablet:
-
-![Liked page tablet](/docs/screenshots/404t.jpg)
-
-Liked page on mobile:
-
-![Liked page mobile](/docs/screenshots/404m.jpg)
-
-For example if I were to unlike the fist post and refresh the page I would no longer see that post on the feed:
-
-![Unliked post](/docs/screenshots/404m.jpg)
+![Navbar logged in on mobile](/docs/screenshots/navbarmin2.jpg)
 
 Outcome: tests passed
 
@@ -362,27 +328,33 @@ Clicking on 'Sign-up' in the navigation bar should take the user to the sign up 
 
 Sign up page on desktop:
 
-![sign up on desktop](/docs/screenshots/signupdesktop.jpg)
+![Sign up page on desktop](/docs/screenshots/signupd.jpg)
 
 Sign up page on tablet:
 
-![sign up on tablet](/docs/screenshots/signuptablet.jpg)
+![Sign up page on tablet](/docs/screenshots/signupt.jpg)
 
 Sign up page on mobile:
 
-![sign up on mobile](/docs/screenshots/signupmobile.jpg)
+![Sign up page on mobile](/docs/screenshots/signupm.jpg)
 
-The Sign-up form requires the user to fill out all fields:
+The Sign-up form requires the user to fill out all fields. Password fields cannot be too simple or too short:
 
-![username required](/docs/screenshots/unrequired.jpg)
+Sign up form on desktop:
 
-![password required](/docs/screenshots/pwrequired.jpg)
+![Password verification](/docs/screenshots/password1d.jpg)
 
-![same password required](/docs/screenshots/pw2required.jpg)
+Sign up form on tablet:
 
-Password fields must be the same and the password cannot be too simple:
+![Sign up form on tablet](/docs/screenshots/password1t.jpg)
 
-![password too common](/docs/screenshots/pwc.jpg)
+Sign up form on mobile:
+
+![Sign up form on mobile](/docs/screenshots/password1m.jpg)
+
+Password fields must also be the same:
+
+![password too common](/docs/screenshots/passwordsame.jpg)
 
 Outcome: tests passed
 
@@ -390,39 +362,41 @@ Clicking on 'Sign-in' in the navigation bar should take them to the sign in page
 
 Sign in page on desktop:
 
-![sign in on desktop](/docs/screenshots/signindesktop.jpg)
+![sign in on desktop](/docs/screenshots/signind.jpg)
 
 Sign in page on tablet:
 
-![sign in on tablet](/docs/screenshots/signintablet.jpg)
+![sign in on tablet](/docs/screenshots/signint.jpg)
 
 Sign in page on mobile:
 
-![sign in on mobile](/docs/screenshots/signinmobile.jpg)
+![sign in on mobile](/docs/screenshots/signinm.jpg)
 
 The Sign-in form requires the users correct username and password:
 
-![users username](/docs/screenshots/username.jpg)
+Username required:
 
-![users password](/docs/screenshots/password.jpg)
+![users username](/docs/screenshots/usernamerequired.jpg)
+
+Password required: 
+
+![users password](/docs/screenshots/passwordrequired.jpg)
+
+Incorrect username or password:
 
 ![incorrect info](/docs/screenshots/incorrect.jpg)
 
 Outcome: tests passed
 
-Clicking on 'Sign-out' in the navigation bar should sign the user out, redirecting to the home page:
+Clicking on 'Sign-out' in the navigation bar should sign the user out, redirecting them to the home page if they aren't there already:
 
-Sign out page on desktop:
+Signed in before sign out button clicked:
 
-![sign out on desktop](/docs/screenshots/signoutdesktop.jpg)
+![before sign out](/docs/screenshots/signout1.jpg)
 
-Sign out page on tablet:
+Signed out after button clicked:
 
-![sign out on tablet](/docs/screenshots/signouttablet.jpg)
-
-Sign out page on mobile:
-
-![sign out on mobile](/docs/screenshots/signoutmobile.jpg)
+![before sign out](/docs/screenshots/signout2.jpg)
 
 Outcome: tests passed
 
@@ -430,47 +404,61 @@ Typing into the search bar on the home page should allow users to search for pos
 
 Searching on desktop:
 
-![Searching on desktop](/docs/screenshots/mdesktop.jpg)
+![Searching on desktop](/docs/screenshots/searchd.jpg)
 
 Searching page on tablet:
 
-![Searching on tablet](/docs/screenshots/mtablet.jpg)
+![Searching on tablet](/docs/screenshots/searcht.jpg)
 
 Searching page on mobile:
 
-![Searching on mobile](/docs/screenshots/mmobile.jpg)
+![Searching on mobile](/docs/screenshots/searchm.jpg)
 
 Outcome: tests passed
 
-Clicking on a popular profiles avatar should take the user to that profiles profile:
+Popular profiles should be displayed to the user:
 
-Profile page on desktop:
+Popular profile on desktop:
 
-![Profile on desktop](/docs/screenshots/mdesktop.jpg)
+![Popular profiles on desktop](/docs/screenshots/popprod.jpg)
 
-Profile page on tablet:
+Popular profile on tablet:
 
-![Profile on tablet](/docs/screenshots/mtablet.jpg)
+![Popular profiles on tablet](/docs/screenshots/popprot.jpg)
 
-Profile page on mobile:
+Popular profile on mobile:
 
-![Profile on mobile](/docs/screenshots/mmobile.jpg)
+![Popular profiles on mobile](/docs/screenshots/popprom.jpg)
+
+Outcome: tests passed
+
+Clicking on a popular profile avatar should take the user to that profile page:
+
+Before clicking on a popular profile:
+
+![Profile on desktop](/docs/screenshots/popprobeforeclicked.jpg)
+
+After clicking on a popular profile:
+
+![Profile on desktop](/docs/screenshots/popproclicked.jpg)
 
 Outcome: tests passed
 
 If logged in the user should be able to see and use the follow/unfollow buttons on the popular profiles:
 
-Feed page on desktop:
+Follow buttons on desktop:
 
-![](/docs/screenshots/404.jpg)
+![follow buttons desktop](/docs/screenshots/followd.jpg)
 
-Feed page on tablet:
+Follow buttons on tablet:
 
-![](/docs/screenshots/404t.jpg)
+![follow buttons tablet](/docs/screenshots/followt.jpg)
 
-Feed page on mobile:
+However on mobile it would take up too much screen space, so they are not present here on mobile screens. Instead users will have to click the profile, then follow it from there.
 
-![](/docs/screenshots/404m.jpg)
+Follow buttons on mobile:
+
+![follow buttons mobile](/docs/screenshots/followm.jpg)
 
 Outcome: tests passed
 
@@ -478,19 +466,19 @@ If the user clicks 'Feed' in the navbar (logged in), they should see the feed pa
 
 Feed page on desktop:
 
-![Feed page desktop](/docs/screenshots/404.jpg)
+![Feed page desktop](/docs/screenshots/feedd.jpg)
 
 Feed page on tablet:
 
-![Feed page tablet](/docs/screenshots/404t.jpg)
+![Feed page tablet](/docs/screenshots/feedt.jpg)
 
 Feed page on mobile:
 
-![Feed page mobile](/docs/screenshots/404m.jpg)
+![Feed page mobile](/docs/screenshots/feedm.jpg)
 
-For example if I were to unfollow (name) and refresh the page I would no longer see their posts on the feed:
+For example if I were to unfollow 'Yumi_Plays' and refresh the page I would no longer see their posts on the feed:
 
-![Unfollowed post](/docs/screenshots/404m.jpg)
+![Unfollowed post](/docs/screenshots/feedunfollow.jpg)
 
 Outcome: tests passed
 
@@ -498,19 +486,27 @@ If the user clicks 'Liked' in the navbar (logged in), they should see the Liked 
 
 Liked page on desktop:
 
-![Liked page desktop](/docs/screenshots/404.jpg)
+![Liked page desktop](/docs/screenshots/likedd.jpg)
 
 Liked page on tablet:
 
-![Liked page tablet](/docs/screenshots/404t.jpg)
+![Liked page tablet](/docs/screenshots/likedt.jpg)
 
 Liked page on mobile:
 
-![Liked page mobile](/docs/screenshots/404m.jpg)
+![Liked page mobile](/docs/screenshots/likedm.jpg)
 
 For example if I were to unlike the fist post and refresh the page I would no longer see that post on the feed:
 
-![Unliked post](/docs/screenshots/404m.jpg)
+![Unliked post](/docs/screenshots/unliked.jpg)
+
+Outcome: tests passed
+
+The user should be able to scroll infinitely to continuously view posts:
+
+A loading circle will signify that more posts are loading to allow inifinite scrolling:
+
+![infinite scrolling](/docs/screenshots/scroll.jpg)
 
 Outcome: tests passed
 
@@ -518,47 +514,31 @@ The user should be able to click on a post to view it in more detail:
 
 Post on desktop:
 
-![Post on desktop](/docs/screenshots/alertd1.jpg)
+![Post on desktop](/docs/screenshots/postd.jpg)
 
 Post on tablet:
 
-![Post on tablet](/docs/screenshots/alertt1.jpg)
+![Post on tablet](/docs/screenshots/postt.jpg)
 
 Post on mobile:
 
-![Post on mobile](/docs/screenshots/alertm1.jpg)
+![Post on mobile](/docs/screenshots/postm.jpg)
 
 Outcome: tests passed
 
-The user should be able to scroll infinitely to continuously view posts ON EVERY:
+A user can like and comment on a post if logged in:
 
-Posts on desktop:
+Like and comment on desktop:
 
-![Posts page on desktop](/docs/screenshots/bdesktop.jpg)
+![Like or comment on desktop](/docs/screenshots/commentd.jpg)
 
-Posts page on tablet:
+Like and comment on tablet:
 
-![Posts page on tablet](/docs/screenshots/btablet.jpg)
+![Like or comment on tablet](/docs/screenshots/commentt.jpg)
 
-Posts page on mobile:
+Like and comment on mobile:
 
-![Posts page on mobile](/docs/screenshots/bmobile.jpg)
-
-Outcome: tests passed
-
-A user must be logged in to like or comment on posts:
-
-Like or comment on desktop:
-
-![Like or comment on desktop](/docs/screenshots/sidesktop.jpg)
-
-Like or comment on tablet:
-
-![Like or comment on tablet](/docs/screenshots/sitablet.jpg)
-
-Like or comment on mobile:
-
-![Like or comment on mobile](/docs/screenshots/simobile.jpg)
+![Like or comment on mobile](/docs/screenshots/commentm.jpg)
 
 Outcome: tests passed
 
@@ -566,15 +546,15 @@ The user should not be able to like their own post:
 
 Unable to like on desktop:
 
-![Unable to like on desktop](/docs/screenshots/adesktop.jpg)
+![Unable to like on desktop](/docs/screenshots/likeownd.jpg)
 
 Unable to like on tablet:
 
-![Unable to like on tablet](/docs/screenshots/atablet.jpg)
+![Unable to like on tablet](/docs/screenshots/likeownt.jpg)
 
 Unable to like on mobile:
 
-![Unable to like on mobile](/docs/screenshots/amobile.jpg)
+![Unable to like on mobile](/docs/screenshots/likeownm.jpg)
 
 Outcome: tests passed
 
@@ -582,47 +562,48 @@ The user should be able to click 'add post' in the navbar to add a post (logged 
 
 Add a post on desktop:
 
-![Add a post on desktop](/docs/screenshots/adesktop.jpg)
+![Add a post on desktop](/docs/screenshots/addpostd.jpg)
 
-Add a poston tablet:
+Add a post on tablet:
 
-![Add a post on tablet](/docs/screenshots/atablet.jpg)
+![Add a post on tablet](/docs/screenshots/addpostt.jpg)
 
 Add a post on mobile:
 
-![Add a post on mobile](/docs/screenshots/amobile.jpg)
+![Add a post on mobile](/docs/screenshots/addpostm.jpg)
 
 Outcome: tests passed
-
+<!--
 The user should not be able to add an image that is too large:
 
 Add a post on desktop:
 
-![Add a post on desktop](/docs/screenshots/adesktop.jpg)
+![Add a post on desktop](/docs/screenshots/largeimaged.jpg)
 
 Add a poston tablet:
 
-![Add a post on tablet](/docs/screenshots/atablet.jpg)
+![Add a post on tablet](/docs/screenshots/largeimaget.jpg)
 
 Add a post on mobile:
 
-![Add a post on mobile](/docs/screenshots/amobile.jpg)
+![Add a post on mobile](/docs/screenshots/largeimagem.jpg)
 
 Outcome: tests passed
+-->
+The user cannot create a post without an image and a title:
 
-The user must add an image, a title and a description to their post:
+Image required:
 
-Add a post on desktop:
+![Image required](/docs/screenshots/image.jpg)
 
-![Add a post on desktop](/docs/screenshots/adesktop.jpg)
+Title required:
 
-Add a poston tablet:
+![Title required](/docs/screenshots/title.jpg)
+<!-- 
+The image cannot be too large:
 
-![Add a post on tablet](/docs/screenshots/atablet.jpg)
-
-Add a post on mobile:
-
-![Add a post on mobile](/docs/screenshots/amobile.jpg)
+![image too large](/docs/screenshots/toolarge.jpg)
+-->
 
 Outcome: tests passed
 
@@ -630,15 +611,15 @@ The user should be able to see the dropdown menu on their own post if logged in:
 
 Dropdown menu on desktop:
 
-![Dropdown menu on desktop](/docs/screenshots/edesktop.jpg)
+![Dropdown menu on desktop](/docs/screenshots/dropdownd.jpg)
 
 Dropdown menu on tablet:
 
-![Dropdown menu on tablet](/docs/screenshots/etablet.jpg)
+![Dropdown menu on tablet](/docs/screenshots/dropdownt.jpg)
 
 Dropdown menu on mobile:
 
-![Dropdown menu on mobile](/docs/screenshots/emobile.jpg)
+![Dropdown menu on mobile](/docs/screenshots/dropdownm.jpg)
 
 Outcome: tests passed
 
@@ -646,63 +627,75 @@ Clicking on the 'Edit' button should allow the user to edit the post via the edi
 
 Edit post on desktop:
 
-![Edit post on desktop](/docs/screenshots/ddesktop.jpg)
+![Edit post on desktop](/docs/screenshots/editpostd.jpg)
 
 Edit post on tablet:
 
-![Edit post on tablet](/docs/screenshots/dtablet.jpg)
+![Edit post on tablet](/docs/screenshots/editpostt.jpg)
 
 Edit post on mobile:
 
-![Edit post on mobile](/docs/screenshots/dmobile.jpg)
+![Edit post on mobile](/docs/screenshots/editpostm.jpg)
 
 Outcome: tests passed
 
-Clicking on the 'Delete' button should delete the post. The page resfreshes and it's no longer visable:
+Clicking on the 'Delete' button should delete the post. The page resfreshes and it's no longer visable on their profile:
 
-Delete post on desktop:
+Before deletion:
 
-![Delete poston desktop](/docs/screenshots/ddesktop.jpg)
+![post present](/docs/screenshots/predelete.jpg)
 
-Delete post on tablet:
+After deletion:
 
-![Delete post on tablet](/docs/screenshots/dtablet.jpg)
-
-Delete post on mobile:
-
-![Delete post on mobile](/docs/screenshots/dmobile.jpg)
+![post deleted](/docs/screenshots/postdelete.jpg)
 
 Outcome: tests passed
 
-The user should be able to edit their profile if logged in:
+The user should be able to see the dropdown menu on their profile page if logged in:
 
-The 404 page on desktop:
+Profile dropdown on desktop:
 
-![custom 404 page desktop](/docs/screenshots/404.jpg)
+![Profile dropdown on desktop](/docs/screenshots/profilemenud.jpg)
 
-The 404 page on tablet:
+Profile dropdown on tablet:
 
-![custom 404 page tablet](/docs/screenshots/404t.jpg)
+![Profile dropdown on tablet](/docs/screenshots/profilemenut.jpg)
 
-The 404 page on mobile:
+Profile dropdown on moblie:
 
-![custom 404 page mobile](/docs/screenshots/404m.jpg)
+![Profile dropdown on mobile](/docs/screenshots/profilemenum.jpg)
+
+Outcome: tests passed
+
+The user should be able to click 'edit' to be taken to the edit profile form:
+
+The edit profile page on desktop:
+
+![Edit profile page desktop](/docs/screenshots/editprofiled.jpg)
+
+The edit profile page on tablet:
+
+![Edit profile page tablet](/docs/screenshots/editprofilet.jpg)
+
+The edit profile page on mobile:
+
+![Edit profile page mobile](/docs/screenshots/editprofilem.jpg)
 
 Outcome: tests passed
 
 The user should be able to edit their username and password if logged in:
 
-The 404 page on desktop:
+The edit username on desktop:
 
-![custom 404 page desktop](/docs/screenshots/404.jpg)
+![edit username desktop](/docs/screenshots/editnamed.jpg)
 
-The 404 page on tablet:
+The edit username on tablet:
 
-![custom 404 page tablet](/docs/screenshots/404t.jpg)
+![edit username tablet](/docs/screenshots/editnamet.jpg)
 
-The 404 page on mobile:
+The edit username on mobile:
 
-![custom 404 page mobile](/docs/screenshots/404m.jpg)
+![custom username mobile](/docs/screenshots/editnamem.jpg)
 
 Outcome: tests passed
 
