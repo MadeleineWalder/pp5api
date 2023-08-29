@@ -324,6 +324,18 @@ Navbar logged in on mobile:
 
 Outcome: tests passed
 
+Clicking on logo should take the user back to the home page:
+
+Before logo clicked:
+
+![Before logo clicke](/docs/screenshots/logobefore.jpg)
+
+After logo clicked:
+
+![After logo clicked](/docs/screenshots/logoafter.jpg)
+
+Outcome: tests passed
+
 Clicking on 'Sign-up' in the navigation bar should take the user to the sign up page:
 
 Sign up page on desktop:
@@ -542,11 +554,55 @@ Like and comment on mobile:
 
 Outcome: tests passed
 
+A user can see the dropdown menu on their comment:
+
+Comment dropdown menu on desktop:
+
+![Comment dropdown menu on desktop](/docs/screenshots/commentmenud.jpg)
+
+Comment dropdown menu on tablet:
+
+![Comment dropdown menu on tablet](/docs/screenshots/commentmenut.jpg)
+
+Comment dropdown menu on mobile:
+
+![Comment dropdown menu on mobile](/docs/screenshots/commentmenum.jpg)
+
+Outcome: tests passed
+
+A user can click 'edit' to edit their comment:
+
+Edit comment on desktop:
+
+![Edit comment on desktop](/docs/screenshots/editcommentd.jpg)
+
+Edit comment on tablet:
+
+![Edit comment on tablet](/docs/screenshots/editcommentt.jpg)
+
+Edit comment on mobile:
+
+![Edit comment on mobile](/docs/screenshots/editcommentm.jpg)
+
+Outcome: tests passed
+
+A user can click 'delete' to delete their comment:
+
+Before deletion:
+
+![Delete comment on desktop](/docs/screenshots/commentbefore.jpg)
+
+After deletion:
+
+![Delete comment on tablet](/docs/screenshots/commentafter.jpg)
+
+Outcome: tests passed
+
 The user should not be able to like their own post:
 
 Unable to like on desktop:
 
-![Unable to like on desktop](/docs/screenshots/likeownd.jpg)
+![Unable to like on desktop](/docs/screenshots/likeownd.png)
 
 Unable to like on tablet:
 
@@ -599,11 +655,10 @@ Image required:
 Title required:
 
 ![Title required](/docs/screenshots/title.jpg)
-<!-- 
+ 
 The image cannot be too large:
 
 ![image too large](/docs/screenshots/toolarge.jpg)
--->
 
 Outcome: tests passed
 
@@ -683,19 +738,35 @@ The edit profile page on mobile:
 
 Outcome: tests passed
 
-The user should be able to edit their username and password if logged in:
+The user should be able to click 'change username' and edit their username:
 
-The edit username on desktop:
+Edit username on desktop:
 
 ![edit username desktop](/docs/screenshots/editnamed.jpg)
 
-The edit username on tablet:
+Edit username on tablet:
 
 ![edit username tablet](/docs/screenshots/editnamet.jpg)
 
-The edit username on mobile:
+Edit username on mobile:
 
 ![custom username mobile](/docs/screenshots/editnamem.jpg)
+
+Outcome: tests passed
+
+The user should be able to click 'change password' and edit their password:
+
+Edit password on desktop:
+
+![edit password desktop](/docs/screenshots/editpasswordd.jpg)
+
+Edit password on tablet:
+
+![edit password tablet](/docs/screenshots/editpasswordt.jpg)
+
+Edit password on mobile:
+
+![custom password mobile](/docs/screenshots/editpasswordm.jpg)
 
 Outcome: tests passed
 
@@ -703,7 +774,7 @@ If the user were to enter a url that doesn't exist the custom 404 page should be
 
 The 404 page on desktop:
 
-![custom 404 page desktop](/docs/screenshots/404.jpg)
+![custom 404 page desktop](/docs/screenshots/404d.jpg)
 
 The 404 page on tablet:
 
@@ -719,84 +790,373 @@ Outcome: tests passed
 
 ### Validator Testing
 
-- I used the [W3C HTML Validator](https://validator.w3.org/#validate_by_input) to test my html.
+- I used the [W3C HTML Validator](https://validator.w3.org/#validate_by_input) to test my html:
 
-DO I ONLY HAVE 1 PAGE??? inspect > download source code > paste into validator
+![The W3C Validator showing my HTML](/docs/screenshots/homehtmlvalidate.jpg)
 
-or
-- home
-- sign-up
-- sign-in
-- post
-- create post
-- edit post
-- profile
-- feed
-- liked
-
-![The W3C Validator showing my HTML](/docs/screenshots/hpvalid1.jpg)
-
+![The W3C Validator showing my HTML](/docs/screenshots/homehtmlvalidate2.jpg)
 
 - I used the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to test my CSS. There were no errors:
 
-![The W3C Validator showing my CSS](/docs/screenshots/cssvalid.jpg)
+The app.module.css:
+
+![The app.module.css](/docs/screenshots/app.module.css.valid.jpg)
+
+The index.css:
+
+![The index.css](/docs/screenshots/index.css.valid.jpg)
+
+The Asset.module.css:
+
+![The Asset.module.css](/docs/screenshots/asset.module.css.valid.jpg)
+
+The Avatar.module.css:
+
+![The Avatar.module.css](/docs/screenshots/avatar.module.css.valid.jpg)
+
+The Button.module.css:
+
+![The Button.module.css](/docs/screenshots/button.module.css.valid.jpg)
+
+The Comment.module.css:
+
+![The Comment.module.css](/docs/screenshots/comment.module.css.valid.jpg)
+
+The CommentCreateEditForm.module.css:
+
+![The CommentCreateEditForm.module.css](/docs/screenshots/commenteditform.module.css.valid.jpg)
+
+The MoreDropdown.module.css:
+
+![The MoreDropdown.module.css](/docs/screenshots/moredropdown.module.css.valid.jpg)
+
+The navbar.module.css:
+
+![The navbar.module.css](/docs/screenshots/navbar.module.css.valid.jpg)
+
+The NotFound.module.css:
+
+![The NotFound.module.css](/docs/screenshots/notfound.module.css.valid.jpg)
+
+The Post.module.css:
+
+![The Post.module.css](/docs/screenshots/post.module.css.valid.jpg)
+
+The PostCreateEditForm.module.css:
+
+![The PostCreateEditForm.module.css](/docs/screenshots/postcreateeditform.module.css.valid.jpg)
+
+The PostsPage.module.css:
+
+![The PostsPage.module.css](/docs/screenshots/postspage.module.css.valid.jpg)
+
+The Profile.module.css:
+
+![The Profile.module.css](/docs/screenshots/profile.module.css.valid.jpg)
+
+The ProfilePage.module.css:
+
+![The ProfilePage.module.css](/docs/screenshots/profilepage.module.css.valid.jpg)
+
+The SignInUpForm.module.css:
+
+![The SignInUpForm.module.css](/docs/screenshots/signinupform.module.css.valid.jpg)
 
 - I used the [CI Python Validator](https://pep8ci.herokuapp.com/) to test my python:
 
-My models.py file had no errors:
+In the 'comments' folder:
 
-![python validator testing my code](/docs/screenshots/models.jpg)
+The apps.py file:
 
-My forms.py file had no errors:
+![The apps.py file](/docs/screenshots/comments.apps.valid.jpg)
 
-![python validator testing my code](/docs/screenshots/forms.jpg)
+The models.py file:
 
-My views.py file had no errors:
+![The models.py file](/docs/screenshots/comments.models.valid.jpg)
 
-![python validator testing my code](/docs/screenshots/views.jpg)
+The serializers.py file:
 
-My urls.py files had no errors except one path which made the line too long:
+![The serializers.py file](/docs/screenshots/comments.serializers.valid.jpg)
 
-![python validator testing my code](/docs/screenshots/urls1.jpg)
+The urls.py file:
 
-![python validator testing my code](/docs/screenshots/urls2.jpg)
+![The urls.py file](/docs/screenshots/comments.urls.valid.jpg)
 
-I did not want to change this as I was worried it would effect the path.
+The views.py file:
 
-My widgets.py file had no errors:
+![The views.py file](/docs/screenshots/comments.views.valid.jpg)
 
-![python validator testing my code](/docs/screenshots/widgets.jpg)
+In the 'followers' folder:
 
-My manage.py file had no errors:
+The apps.py file:
 
-![python validator testing my code](/docs/screenshots/manage.jpg)
+![The apps.py file](/docs/screenshots/followers.apps.valid.jpg)
 
-My admin.py file had no errors:
+The models.py file:
 
-![python validator testing my code](/docs/screenshots/admin.jpg)
+![The models.py file](/docs/screenshots/followers.models.valid.jpg)
 
-My wsgi.py file had no errors:
+The serializers.py file:
 
-![python validator testing my code](/docs/screenshots/wsgi.jpg)
+![The serializers.py file](/docs/screenshots/followers.serializers.valid.jpg)
 
-My settings.py file had a few ling too long errors:
+The urls.py file:
 
-![python validator testing my code](/docs/screenshots/settings.jpg)
+![The urls.py file](/docs/screenshots/followers.urls.valid.jpg)
 
-I could not fix these errors and code is still functioning as intended so I left them alone.
-As you can see in this screenshot above, line 124, 127, 130 and 133 cannot be made shorter, at least to my knowledge.
+The views.py file:
+
+![The views.py file](/docs/screenshots/followers.views.valid.jpg)
+
+In the 'likes' folder:
+
+The apps.py file:
+
+![The apps.py file](/docs/screenshots/likes.apps.valid.jpg)
+
+The models.py file:
+
+![The models.py file](/docs/screenshots/likes.models.valid.jpg)
+
+The serializers.py file:
+
+![The serializers.py file](/docs/screenshots/likes.serializers.valid.jpg)
+
+The urls.py file:
+
+![The urls.py file](/docs/screenshots/likes.urls.valid.jpg)
+
+The views.py file:
+
+![The views.py file](/docs/screenshots/likes.views.valid.jpg)
+
+In the 'posts' folder:
+
+The apps.py file:
+
+![The apps.py file](/docs/screenshots/posts.apps.valid.jpg)
+
+The models.py file:
+
+![The models.py file](/docs/screenshots/posts.models.valid.jpg)
+
+The serializers.py file:
+
+![The serializers.py file](/docs/screenshots/posts.serializers.valid.jpg)
+
+The urls.py file:
+
+![The urls.py file](/docs/screenshots/posts.urls.valid.jpg)
+
+The views.py file:
+
+![The views.py file](/docs/screenshots/posts.views.valid.jpg)
+
+In the 'pp5api' folder:
+
+The asgi.py file:
+
+![The asgi.py file](/docs/screenshots/api_asgi.valid.jpg)
+
+The permissions.py file:
+
+![The permissions.py file](/docs/screenshots/api.permissions.valid.jpg)
+
+The serializers.py file:
+
+![The serializers.py file](/docs/screenshots/api.serializers.valid.jpg)
+
+The settings.py file:
+
+As you can see I have four lines that are too long, but to my knowledge these cannot be shortened and do not effect the functionality of the code.
+
+![The settings.py file](/docs/screenshots/api.settings.valid.jpg)
+
+The urls.py file:
+
+![The urls.py file](/docs/screenshots/api.urls.valid.jpg)
+
+The views.py file:
+
+![The views.py file](/docs/screenshots/api.views.valid.jpg)
+
+The wsgi.py file:
+
+![The wsgi.py file](/docs/screenshots/api.wsgi.valid.jpg)
+
+In the 'profiles' folder:
+
+The apps.py file:
+
+![The apps.py file](/docs/screenshots/profiles.apps.valid.jpg)
+
+The models.py file:
+
+![The models.py file](/docs/screenshots/profiles.models.valid.jpg)
+
+The serializers.py file:
+
+![The serializers.py file](/docs/screenshots/profiles.serializers.valid.jpg)
+
+The urls.py file:
+
+![The urls.py file](/docs/screenshots/profiles.urls.valid.jpg)
+
+The views.py file:
+
+![The views.py file](/docs/screenshots/profiles.views.valid.jpg)
 
 - I used [JSHint](https://jshint.com/) to test my JavaScript:
 
-![JSHint validator testing my code](/docs/screenshots/js.jpg)
+In the 'frontend' directory inside 'src':
 
-As you can see the only errors were missing semi-colons so I added these.
+The App.js file:
 
-![JSHint validator testing my code](/docs/screenshots/js1.jpg)
+![JSHint validator testing my code](/docs/screenshots/app.js.valid.jpg)
+
+The index.js file:
+
+![JSHint validator testing my code](/docs/screenshots/index.js.valid.jpg)
+
+Inside the 'api' folder:
+
+The axiosDefaults.js file:
+
+![JSHint validator testing my code](/docs/screenshots/axios.valid.jpg)
+
+Inside the 'components' folder:
+
+The Asset.js file:
+
+![JSHint validator testing my code](/docs/screenshots/asset.js.valid.jpg)
+
+The Avatar.js file:
+
+![JSHint validator testing my code](/docs/screenshots/avatar.js.valid.jpg)
+
+The MoreDropdown.js file:
+
+This file is a little strange as there is a lot of warnings here. Several of them are missing semi-colons, however I dont see how you can even add a semi-colon to line 12 for example. In the end I left this file as it was.
+
+![JSHint validator testing my code](/docs/screenshots/moredropdown.js.valid.jpg)
+
+The NavBar.js file:
+
+![JSHint validator testing my code](/docs/screenshots/navbar.js.valid.jpg)
+
+The NotFound.js file:
+
+![JSHint validator testing my code](/docs/screenshots/notfound.js.valid.jpg)
+
+Inside the 'contexts' folder:
+
+The CurrentUserContext.js file:
+
+![JSHint validator testing my code](/docs/screenshots/cuc.js.valid.jpg)
+
+The ProfileDataContext.js file:
+
+![JSHint validator testing my code](/docs/screenshots/pdc.js.valid.jpg)
+
+Inside the 'hooks' folder:
+
+The useClickOutsideToggle.js file:
+
+![JSHint validator testing my code](/docs/screenshots/ucot.js.valid.jpg)
+
+The useRedirect.js file:
+
+![JSHint validator testing my code](/docs/screenshots/useredirect.js.valid.jpg)
+
+Inside the 'mocks' folder:
+
+The handlers.js file:
+
+![JSHint validator testing my code](/docs/screenshots/handlers.js.valid.jpg)
+
+Inside the 'pages' folder inside 'auth':
+
+The SignInForm.js file:
+
+![JSHint validator testing my code](/docs/screenshots/sin.js.valid.jpg)
+
+The SignUpForm.js file:
+
+![JSHint validator testing my code](/docs/screenshots/suf.js.valid.jpg)
+
+Inside the 'pages' folder inside 'comments':
+
+The Comment.js file:
+
+![JSHint validator testing my code](/docs/screenshots/comment.js.valid.jpg)
+
+The CommentCreateForm.js file:
+
+![JSHint validator testing my code](/docs/screenshots/ccf.js.valid.jpg)
+
+The CommentEditForm.js file:
+
+![JSHint validator testing my code](/docs/screenshots/cef.js.valid.jpg)
+
+Inside the 'pages' folder inside 'posts':
+
+The Post.js file:
+
+![JSHint validator testing my code](/docs/screenshots/post.js.valid.jpg)
+
+The PostCreateForm.js file:
+
+![JSHint validator testing my code](/docs/screenshots/pcf.js.valid.jpg)
+
+The PostEditForm.js file:
+
+![JSHint validator testing my code](/docs/screenshots/pef.js.valid.jpg)
+
+The PostPage.js file:
+
+![JSHint validator testing my code](/docs/screenshots/pp.js.valid.jpg)
+
+The PostsPage.js file:
+
+![JSHint validator testing my code](/docs/screenshots/psp.js.valid.jpg)
+
+Inside the 'pages' folder inside 'profiles':
+
+The PopularProfiles.js file:
+
+![JSHint validator testing my code](/docs/screenshots/poppro.js.valid.jpg)
+
+The Profile.js file:
+
+![JSHint validator testing my code](/docs/screenshots/profile.js.valid.jpg)
+
+The ProfileEditForm.js file:
+
+![JSHint validator testing my code](/docs/screenshots/profileeditform.js.valid.jpg)
+
+The ProfilePage.js file:
+
+![JSHint validator testing my code](/docs/screenshots/propage.js.valid.jpg)
+
+The usernameForm.js file:
+
+![JSHint validator testing my code](/docs/screenshots/unf.js.valid.jpg)
+
+The UserPasswordForm.js file:
+
+![JSHint validator testing my code](/docs/screenshots/upf.js.valid.jpg)
+
+Inside the 'pages' folder inside 'utils':
+
+The utils.js file:
+
+![JSHint validator testing my code](/docs/screenshots/utils.js.valid.jpg)
 
 - I have tested my site using the devtools Lighthouse feature.
 
-![The lighthouse report](/docs/screenshots/lhreport.jpg)
+The results are not as good as I had hoped, with only 68 on performance due to a lot of images being loaded in the order they are posted by users.
+
+![The lighthouse report](/docs/screenshots/lighthouse.jpg)
 
 ---
 
@@ -829,6 +1189,6 @@ As you can see the only errors were missing semi-colons so I added these.
 - Back in Heroku I went to the deployment tab for my app and selected Github. Then I searched for and selected my repository.
 - At the bottom of the page I ticked the box to enable automatic deploys, and then clicked deploy.
 
-Link to deployed site: https://sushicat.herokuapp.com/
+Link to deployed site: 
 
 ---

@@ -100,11 +100,6 @@ function PostCreateForm() {
           onChange={handleChange}
         />
       </Form.Group>
-      {errors?.title?.map((message, idx) => (
-        <Alert variant="warning" key={idx}>
-          {message}
-        </Alert>
-      ))}
 
       <Form.Group>
         <Form.Label>Content</Form.Label>
@@ -178,7 +173,7 @@ function PostCreateForm() {
             </Form.Group>
             {errors?.image?.map((message, idx) => (
               <Alert variant="warning" key={idx}>
-                {"Please upload an image"}
+                {message}
               </Alert>
             ))}
 
