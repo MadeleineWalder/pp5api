@@ -11,15 +11,13 @@ This site is designed to be a social media platform aimed specifically at gamers
 
 ## Project Board
 
-### Link: 
+### Link: https://github.com/users/MadeleineWalder/projects/6
 
 Here you can see:
 - The Wireframe
 - User Stories
-- Design Features
-- Structural Features
-- Future Features
-- Bugs
+- Features
+- Bugs & Fixes
 
 #### Note all of these are also included below.
 
