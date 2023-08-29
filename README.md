@@ -5,7 +5,7 @@ This site is designed to be a social media platform aimed specifically at gamers
 
 ![Finished website on different devices](/docs/screenshots/.jpg)
 
-### Link to deployed site: 
+### Link to deployed site: https://pp5api-a60f85b616aa.herokuapp.com/
 
 ---
 
@@ -1187,6 +1187,6 @@ The results are not as good as I had hoped, with only 68 on performance due to a
 - Back in Heroku I went to the deployment tab for my app and selected Github. Then I searched for and selected my repository.
 - At the bottom of the page I ticked the box to enable automatic deploys, and then clicked deploy.
 
-Link to deployed site: 
+Link to deployed site: https://pp5api-a60f85b616aa.herokuapp.com/
 
 ---
