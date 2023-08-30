@@ -1,11 +1,17 @@
 # Gamebook
 
 Welcome to Gamebook! The site where gaming enthusiasts can share thoughts, tips, tricks and more about games!
-This site is designed to be a social media platform aimed specifically at gamers. It is a place where the community can come together and share a huge amount of knowledge on any game. The platform would also appeal to gaming companies and content creators as a way to advatise and monitor the popularity of certain games. This makes it stand out from the huge crowd of different social media platforms that exist today, and this is only the begining! I truely believe thise site could be added apon significantly to make it even better with some extra features that would help it to excel in a real world senerio.
+This site is designed to be a social media platform aimed specifically at gamers. It is a place where the community can come together and share a huge amount of knowledge on any game. The platform would also appeal to gaming companies and content creators as a way to advatise and monitor the popularity of certain games. This makes it stand out from the huge crowd of different social media platforms that exist today, and this is only the begining! I truely believe thise site could be improved apon significantly to make it even better with some extra features that would help it to excel in a real world senerio.
 
-![Finished website on different devices](/docs/screenshots/.jpg)
+![Finished website on different devices](/docs/screenshots/responsive.jpg)
 
 ### Link to deployed site: https://pp5api-a60f85b616aa.herokuapp.com/
+
+---
+
+## The Fontend
+
+- While it is crusial that the back end is functional, the main focus for this project was the front end. Front end developers often focus on the user interface (UI) and user experience (UX) to create an interactive and user friendly application. This is what I tried to accomplish in this project, using wireframes to translate my ideas into a responsive and functioning website.
 
 ---
 
@@ -17,11 +23,13 @@ Here you can see:
 - The Wireframe
 - User Stories
 - Features
-- Bugs & Fixes
+- Bugs & Fixes (includes a major bug)
 
 #### Note all of these are also included below.
 
 ## The Wireframe
+
+These wireframe were some basic ideas of how I wanted my site to look. I waanted it to be clear and practical, so that the user can navigate easily. I thought about putting the popular profiles section at the top of the page just under the navbar but I really wanted users to be able to see the first post clearly when they opened the site. This would be more likely to draw people in. However I realised that this was perfect for smaller screen widths, as having two columns next to each other on a mobile device for example makes the content much too small.
 
 - The wireframe for the home page:
 
@@ -227,6 +235,14 @@ In the future I would love to include the following aspects to make the site com
 
 ## Bugs
 
+### Major Bug:
+
+- Bug: On the **deployed** site from Heroku, the user cannot add a post, view a profile or comment on a post.
+
+- Solution: **Unfixed**. I spent over an hour looking into this bug with a professional tutor and even with their help, experience and expertise we could not work out what was causing this. They even sent a message out to other tutors to see if they had experienced this before but with no luck. I also sent out a message on slack with the same result. **PLEASE NOTE:** This bug does **not** occur in the gitpod local preview of the site. There users can add posts, view profiles and add comments without fail. Both me and the tutor have checked among numerous other things that all the urls are correct and the config vars are correct. It is incredibly strange that this bug only appears in the deployed site. I have also made sure to commit, push and manually redeploy my site but no progress was made. No one can find out why the site works in the local preview but not on the deployed version. As far as I am aware there is nothing else I can possibly do to fix this bug, as we cannot even find the cause let alone suggest a solution. I have contacted Student Care reguarding this as I am very worried that I will fail the project because of this seemingly unfixable bug, however I doubt there is anything that anyone can even do to help. Even with extra time I don't see how I could fix this bug as I have already exhausted all options. The only thing I can think of would be to start again with a new repository, which would obviously require a very significant amount of time.
+
+### Minor Bugs:
+
 - Bug: The user could not see the stats on their profile/ another users profile such as number of posts, followers and following.
 
 - Solution: In my serializers.py file inside the profiles directory I had forgotten to add 'posts_count', 'followers_count', 'following_count', to the fields lists in the meta class for the profile model.
@@ -245,7 +261,7 @@ In the future I would love to include the following aspects to make the site com
 ## Technologies:
 
 - This site was created using these languages: Python, JavaScript, React, HTML and CSS.
-- Frameworks/Libraries: Django and Bootstrap.
+- Frameworks/Libraries: Django, REST and Bootstrap.
 - Github and Gitpod are the platforms where I created this website. Github (and Gihub pages) for creating and storing my repositories and project board/issues, and Gitpod for writing the code.
 - Heroku was connected to my github repository for site deployment.
 - [Google Fonts](https://fonts.google.com/) is where I imported my font from.
@@ -627,23 +643,7 @@ Add a post on mobile:
 ![Add a post on mobile](/docs/screenshots/addpostm.jpg)
 
 Outcome: tests passed
-<!--
-The user should not be able to add an image that is too large:
 
-Add a post on desktop:
-
-![Add a post on desktop](/docs/screenshots/largeimaged.jpg)
-
-Add a poston tablet:
-
-![Add a post on tablet](/docs/screenshots/largeimaget.jpg)
-
-Add a post on mobile:
-
-![Add a post on mobile](/docs/screenshots/largeimagem.jpg)
-
-Outcome: tests passed
--->
 The user cannot create a post without an image and a title:
 
 Image required:
